@@ -1,0 +1,123 @@
+JSON
+
+ 1. Создать внешний репозиторий c названием JSON.
+ 
+ 2. Клонировать репозиторий JSON на локальный компьютер.
+ git clone https://github.com/Palimpsssest/JSON.git
+
+ 3. Внутри локального JSON создать файл “new.json”.
+ touch new.json
+
+ 4. Добавить файл под гит.
+ git add new.json
+
+ 5. Закоммитить файл.
+ git commit -m 'new file created"
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+ git push
+
+ 7. Отредактировать содержание файла “new.json” - написать информацию о себе
+ (ФИО, возраст, количество домашних животных, будущая желаемая зарплата).
+ Всё написать в формате JSON.
+
+ code .
+
+{
+     "name": "Yana",
+     "surname": "Fadina",
+     "Age": "29",
+     "pets": "Cat",
+     "salary": "three rice plates per week"
+ }
+
+ Command+Shift+P
+ Format document
+ Command+S
+
+ 8. Отправить изменения на внешний репозиторий.
+ git add new.json
+ git commit -m "new.json file changed"
+
+ 9. Создать файл preferences.json
+ touch preferences.json
+
+ 10. В файл preferences.json добавить информацию о своих предпочтениях
+ (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна
+ которую хотели бы посетить) в формате JSON.
+
+ code .
+
+ {
+    "movie": "The Life of David Gale",
+    "series": "Ann",
+    "food": "Fish",
+    "season": "Autumn",
+    "country": "New Zealand"
+ }
+
+ Command+Shift+P
+ Format document
+ Command+S
+
+ 11. Создать файл sklls.json добавить информацию о скиллах,
+ которые будут изучены на курсе в формате JSON
+
+ nano skills.json
+
+ {
+    "Tools": [
+        "Chrome Devtools",
+        "Postman",
+        "Charles",
+        "Git"
+    ],
+    "language": "JavaScript"
+ }
+
+ Ctrl+O > Enter > Ctrl+X
+
+ 12. Отправить сразу 2 файла на внешний репозиторий.
+ git add preferences.json skills.json
+ git commit -m "preferences and skills was added"
+ git push
+
+ 13. На веб интерфейсе создать файл bug_report.json.
+ Открыть страницу https://github.com/Palimpsssest/JSON
+ Кликнуть "Add file"
+ Кликнуть "Create new file"
+ Заполнить поле "Name your file"
+ Прокрутить вниз, заполнить информацию о коммите.
+
+ 14. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ Cохранить, нажав кнопку "Commit new file".
+
+ 15. На веб интерфейсе модифицировать файл bug_report.json, 
+ добавить баг репорт в формате JSON.
+
+ {
+  "id": 1,
+  "name": "Can't log in after clicking the login button",
+  "description":"Can't log in when the correct data was entered",
+  "steps_to_represent": {"1":"Open the auth page", "2": "Enter the login value 'test' ",
+ "3": "Enter the password value 'test'", "4":"Press 'Log In' button"},
+
+  "actual_result":"Error message 'Incorrect username or password' appeared",
+  "expected_result":"Login successful. User profile appeared",
+  "priority": "High",
+  "severity": "Blocker",
+  "environment": "Chrome 102.0.5005.63"
+ }
+
+ 16. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ Нажать на "Commit new file".
+
+ 17. Синхронизировать внешний и локальный репозиторий JSON
+ git pull
+
+
+ At the end we got the next repos:
+ https://github.com/Palimpsssest/JSON
+ https://github.com/Palimpsssest/XML
+ https://github.com/Palimpsssest/TXT
+
